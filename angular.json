@@ -22,9 +22,14 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
+              "src/styles.scss",
+              "node_modules/font-awesome/css/font-awesome.min.css"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules/bootstrap/scss"
+              ]
+            },
             "scripts": []
           },
           "configurations": {

@@ -1,0 +1,8 @@
+/* Style for Star.compnent.scss */
+@import "functions";
+@import "variables";
+@import "mixins";
+
+thead {
+    color: $blue;
+}
