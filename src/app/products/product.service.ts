@@ -16,7 +16,7 @@ export class ProductService {
     return this._http.get<IProduct[]>(this._productUrl)
       .pipe(
         catchError(this.handleError),
-        tap(_ => console.log(`fetched Json: + ${JSON.stringify(_)}`))
+        // tap(_ => console.log(`fetched Json: + ${JSON.stringify(_)}`))
       );
   }
   private handleError(err: HttpErrorResponse) {
