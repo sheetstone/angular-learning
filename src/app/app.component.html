@@ -1,7 +1,26 @@
 <!--The whole content below can be removed with the new code.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{pageTitle}}!!
-  </h1>
-  <pm-products></pm-products>
+
+  <nav class="navbar navbar-expand-xl bg-light">
+    <a class="navbar-brand" [routerLink]="['/welcome']">{{pageTitle}}</a>
+    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/welcome']" [routerLinkActive]="['active']" #rla="routerLinkActive">Home
+            <span class='sr-only' *ngIf="rla.isActive">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/products']" [routerLinkActive]="['active']" #rla1="routerLinkActive">Product List
+            <span class='sr-only' *ngIf="rla1.isActive">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
 </div>
