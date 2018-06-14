@@ -7,14 +7,14 @@ import { WelcomeComponent } from './home/welcome.component';
 import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { ProductModule } from './products/product.module';
-import { AppRouter } from './config/app-router.module';
+import { AppRouterModule } from './config/app-router.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     ProductModule,
-    AppRouter
+    AppRouterModule
   ],
   declarations: [
     AppComponent,

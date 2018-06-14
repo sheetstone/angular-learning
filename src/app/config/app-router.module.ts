@@ -1,5 +1,4 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-
 import { RouterModule, Routes } from '@angular/router';
 
 import { WelcomeComponent } from '../home/welcome.component';
@@ -26,5 +25,5 @@ export const routes: Routes = [
 ];
 
 
-export const AppRouter: ModuleWithProviders = RouterModule.forRoot(routes);
+export const AppRouterModule: ModuleWithProviders = RouterModule.forRoot(routes);
 
