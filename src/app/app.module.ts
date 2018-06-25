@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { ProductModule } from './products/product.module';
 import { AppRouterModule } from './config/app-router.module';
+import { CustomersComponent } from './customers/customers.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { AppRouterModule } from './config/app-router.module';
     AppComponent,
     WelcomeComponent,
     PageNotFoundComponent,
-    ErrorpageComponent
+    ErrorpageComponent,
+    CustomersComponent
   ],
   bootstrap: [AppComponent]
 })
