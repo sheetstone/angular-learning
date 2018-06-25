@@ -4,10 +4,10 @@ import { NgForm } from '@angular/forms';
 import { Customer } from './customer';
 
 @Component({
-  selector: 'my-signup',
-  templateUrl: './app/customers/customer.component.html'
+  templateUrl: './customers.component.html',
+  styleUrls: ['./customers.component.css']
 })
-export class CustomerComponent {
+export class CustomersComponent {
   customer: Customer = new Customer();
 
   save(customerForm: NgForm) {

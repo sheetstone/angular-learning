@@ -17,6 +17,10 @@
           <a class="nav-link" [routerLink]="['/products']" [routerLinkActive]="['active']" #rla1="routerLinkActive">Product List
             <span class='sr-only' *ngIf="rla1.isActive">(current)</span></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/customers']" [routerLinkActive]="['active']" #rla1="routerLinkActive">Customers
+            <span class='sr-only' *ngIf="rla1.isActive">(current)</span></a>
+        </li>
       </ul>
     </div>
   </nav>

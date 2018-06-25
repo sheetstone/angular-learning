@@ -8,6 +8,7 @@ import { ProductionListComponent } from '../products/product-list.component';
 import { ProductDetailComponent } from '../products/product-detail.component';
 import { ProductService } from '../products/product.service';
 import { ProductGuardService } from '../products/product-guard.service';
+import { CustomersComponent } from '../customers/customers.component';
 
 export const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -17,6 +18,7 @@ export const routes: Routes = [
     canActivate: [ProductGuardService],
     component: ProductDetailComponent
   },
+  { path: 'customers', component: CustomersComponent },
   /* Wild card defination */
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
   { path: 'error', component: ErrorpageComponent },
