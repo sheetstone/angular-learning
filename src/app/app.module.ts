@@ -7,22 +7,24 @@ import { WelcomeComponent } from './home/welcome.component';
 import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { ProductModule } from './products/product.module';
+import { CustomerModule } from './customers/customer.module';
 import { AppRouterModule } from './config/app-router.module';
-import { CustomersComponent } from './customers/customers.component';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
+    AppRouterModule, // .config/app-router.module.ts defined the route.
     ProductModule,
-    AppRouterModule
+    CustomerModule,
+
   ],
   declarations: [
     AppComponent,
     WelcomeComponent,
     PageNotFoundComponent,
-    ErrorpageComponent,
-    CustomersComponent
+    ErrorpageComponent
   ],
   bootstrap: [AppComponent]
 })
