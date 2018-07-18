@@ -18,8 +18,12 @@
             <span class='sr-only' *ngIf="rla1.isActive">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/customers']" [routerLinkActive]="['active']" #rla1="routerLinkActive">Customers
-            <span class='sr-only' *ngIf="rla1.isActive">(current)</span></a>
+            <a class="nav-link" [routerLink]="['/productEdit/0']" [routerLinkActive]="['active']" #rla2="routerLinkActive">Add Product
+              <span class='sr-only' *ngIf="rla2.isActive">(current)</span></a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/customers']" [routerLinkActive]="['active']" #rla3="routerLinkActive">Customers
+            <span class='sr-only' *ngIf="rla3.isActive">(current)</span></a>
         </li>
       </ul>
     </div>

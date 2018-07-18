@@ -18,13 +18,12 @@ import { AppRouterModule } from './config/app-router.module';
     AppRouterModule, // .config/app-router.module.ts defined the route.
     ProductModule,
     CustomerModule,
-
   ],
   declarations: [
     AppComponent,
     WelcomeComponent,
     PageNotFoundComponent,
-    ErrorpageComponent
+    ErrorpageComponent,
   ],
   bootstrap: [AppComponent]
 })
